@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  color: #000;
+  background: #332f29;
+  font-size: 100%;
+}
+#contenedor {
+  width: 800px;
+  background: #8fa68e;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  background: #cc3910;
+  width: 160px;
+  height: fit-content;
+  flex-shrink: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #f1f2c0;
+  text-decoration: none;
+}
+section {
+  background: #f1f2c0;
+  width: 400px;
+  height: fit-content;
+}
+aside {
+  background: #ccc59e;
+  width: 190px;
+  height: fit-content;
+}
+
+@media screen and (max-width: 800px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+  }
+  nav {
+    background-color: #fc6;
+  }
+  a {
+    color: black;
+  }
+
+  section {
+    background-color: #f2f2c0;
+    padding: 1%;
+    /*It makes this section have only top and bottoms borders. The first statement declares border properties for everything. 
+	The "border-style" specifies that the top and bottom borders are solid, but the left and right ones are "none"*/
+    border: 1px black;
+    border-style: solid none;
+  }
+  aside {
+    background-color: #cdc59e;
+    padding: 1%;
+  }
+}
